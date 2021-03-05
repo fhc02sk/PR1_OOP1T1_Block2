@@ -18,6 +18,7 @@ public class DistanceDemo {
         System.out.println(miles + " Meilen entsprechen " + kilometer12 + " Kilometer");
         System.out.println(miles2 + " Meilen entsprechen " + milesToKilometer(miles2) + " Kilometer");
         System.out.println(miles3 + " Meilen entsprechen " + milesToKilometer(miles3) + " Kilometer");
+
     }
 
     // Methode ist unabhängig vom Aufrufer
