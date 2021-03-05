@@ -14,12 +14,12 @@ public class DemoCalcDigitSum {
     public static int calcDigitSum(int value) {
         // bis value = 0 => solange value > 0
 
-        int ziffersumme = 0;
+        int digitsum = 0;
         while (value > 0){
-            ziffersumme = ziffersumme + (value % 10); // 0 + 7 = 7
+            digitsum = digitsum + (value % 10); // 0 + 7 = 7
             value = value / 10; // number = 98
         }
 
-        return ziffersumme;
+        return digitsum;
     }
 }
