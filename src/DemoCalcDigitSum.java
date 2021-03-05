@@ -4,18 +4,21 @@ public class DemoCalcDigitSum {
         // 54321 => 15
         // 9876543 = 42
         // 12 = 3
+
+        System.out.println("calcDigitSum(54321) = " + calcDigitSum(54321));
+        System.out.println("calcDigitSum(9876543) = " + calcDigitSum(9876543));
+        System.out.println("calcDigitSum(12) = " + calcDigitSum(12));
+        System.out.println("calcDigitSum(987654321) = " + calcDigitSum(987654321));
     }
 
-    public static int calcDigitSum(int value) { // Method signature
+    public static int calcDigitSum(int value) {
         // bis value = 0 => solange value > 0
 
         int ziffersumme = 0;
-        ziffersumme = ziffersumme + (value % 10); // 0 + 7 = 7
-        value = value / 10; // number = 98
-        ziffersumme = ziffersumme + (value % 10); // 7 + 8 = 15
-        value = value / 10; // number = 9
-        ziffersumme = ziffersumme + (value % 10); // 15 + 9 = 24
-        value = value / 10; // number = 0
+        while (value > 0){
+            ziffersumme = ziffersumme + (value % 10); // 0 + 7 = 7
+            value = value / 10; // number = 98
+        }
 
         return ziffersumme;
     }
