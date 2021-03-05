@@ -32,5 +32,21 @@ public class LoopDemo {
         *   6 pong
         * */
 
+        int counter1 = 1;
+        while (counter1 <= 100) {
+            System.out.print(counter1);
+            if (counter1 % 2 == 0){
+                System.out.println(" pong");
+            }
+            else {
+                System.out.println(" ping");
+            }
+
+            counter1++;
+        }
+
+        /* Write a loop, which displays all numbers between 1 and 500, which could by divided by 3, 5 or 7 */
+
+
     }
 }
