@@ -46,7 +46,34 @@ public class LoopDemo {
         }
 
         /* Write a loop, which displays all numbers between 1 and 500, which could by divided by 3, 5 or 7 */
+        /*int counter2 = 1;
+        while (counter2 <= 500){
+            if (counter2 % 3 == 0) {
+                System.out.println(counter2);
+            } else if (counter2 % 5 == 0) {
+                System.out.println(counter2);
+            } else if (counter2 % 7 == 0) {
+                System.out.println(counter2);
+            }
+            counter2++;
+        }*/
 
 
+        int counter2 = 1;
+        while (counter2 <= 500){
+            if (counter2 % 3 == 0 || counter2 % 5 == 0 || counter2 % 7 == 0) {
+                System.out.println(counter2);
+            }
+            counter2++;
+        }
+
+        int counter3 = 500;
+        while (counter3 < 100) {
+            System.out.println("counter < 100");
+        }
+
+        do {
+            System.out.println("do counter < 100");
+        } while (counter3 < 100);
     }
 }
